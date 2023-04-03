@@ -146,15 +146,6 @@ p, h1, h2, h3, h4, h5, h6{
     font-weight: 500;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.current::after {
-    content: '';
-    display: block;
-    position: absolute;
-    bottom: -1px;
-    width: 100%;
-    border-bottom: 4px solid var(--color-pressed-state);
-    border-radius: 2px;
-}
 .header-address {
     color: var(--color-dark);
     text-decoration: none;
@@ -165,9 +156,10 @@ p, h1, h2, h3, h4, h5, h6{
     padding-bottom: 24px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.header .list .current{
+.current{
     color: var(--color-pressed-state);
 }
+
 .header-links:hover {
     color: var(--color-pressed-state);
     text-decoration: none;
