@@ -13,6 +13,12 @@
 
 }
 
+button {
+    cursor: pointer;
+    color: inherit;
+    border: none;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     color: var(--color-white);
@@ -160,6 +166,7 @@ p, h1, h2, h3, h4, h5, h6{
     padding-top: 24px;
     padding-bottom: 24px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
 }
 
 .header .list .link:hover,
@@ -173,7 +180,8 @@ p, h1, h2, h3, h4, h5, h6{
     position: absolute;
     bottom: -1px;
     width: 100%;
-    border-bottom: 4px solid var(--color-pressed-state);
+    height: 4px;
+    background-color: var(--color-pressed-state);
     border-radius: 2px;
 }
 
@@ -534,8 +542,6 @@ img {
 .card-wrap {
     position: relative;
     overflow: hidden;
-    width: 360px;
-    height: 300px;
 }
 
 .card-overlay {
@@ -560,7 +566,7 @@ img {
 }
 
 .modal {
-    position: relative;
+    position: absolute;
     top: 50%;
     left: 50%;
     width: 100%;
@@ -584,4 +590,7 @@ img {
     background: var(--color-accent);
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
+}
+.close-icon{
+    height: 21px;
 }
